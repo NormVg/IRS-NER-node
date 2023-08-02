@@ -1,0 +1,101 @@
+{
+  "intents": [
+    {
+      "tag": "no-reply",
+      "patterns": [""," ","how are you","hi"],
+      "responses": {"irs":"000","ner":false}
+    },
+    {
+      "tag": "movie-random",
+      "patterns": ["play a movie","play some movie","play a picture","play any movie","put any movie"],
+      "responses": {"irs":"movie-random","ner":false}
+    },
+    {
+      "tag": "music-command",
+      "patterns": ["play bella songs","play bella","playing bella songs","play the bella song fury","play void songs","play songs of bella","play music of bella","play music"],
+      "responses": {"irs":"music-command","ner":true,"ner-tag":"media-command"}
+    },
+    {
+      "tag": "music-random",
+      "patterns": ["poori uncle just play music","put on music","play music","play some music","play a song","play any song","fury uncle just play music","play the song fury"],
+      "responses": {"irs":"music-random","ner":false}
+    },
+    {
+      "tag": "movie-command",
+      "patterns": ["play movie","play iron man movie","play john wick movie","play endgame movie"],
+      "responses": {"irs":"movie-command","ner":true,"ner-tag":"media-command"}
+    },
+
+    
+    
+    {
+      "tag": "weather-command",
+      "patterns": ["how is the weather in delhi","tell new zealand weather","How is the weather of Uttarakhand","tell the weather of lucknow","Tell the weather of Fury Bihar"],
+      "responses": {"irs":"weather-command","ner":true,"ner-tag":"place"}
+    },
+    {
+      "tag": "weather-home",
+      "patterns": ["how's the fury weather","How is the weather","tell about the weather","tell me about the weather","i want to know about today's weather","how is the weather today"],
+      "responses": {"irs":"weather-home","ner":false}
+    },
+
+
+    {
+      "tag": "time-ask",
+      "patterns": ["what is the time","tell time","time batana Fury","tell me what time is it","what time is it","what time is it now"],
+      "responses": {"irs":"time-ask","ner":false}
+    },
+
+
+    {
+      "tag": "date-ask",
+      "patterns": ["what is the date today","what is the date today","what is today's date","what is the date","what was today's date"],
+      "responses": {"irs":"date-ask","ner":false}
+    },
+
+
+    {
+      "tag": "wiki-ask",
+      "patterns": ["what about black holes in wikipedia","what is marvel look in wikipedia","Is there anything on Wikipedia about Robert Downey Jr.?","what is frankenstein wikipedia","Look up Dracula on Wikipedia","Tell me about battries on Wikipedia","tell me about wolfenstine on wikipedia","what is wolfenstine on wikipedia"],
+      "responses": {"irs":"wiki-ask","ner":true,"ner-tag":"wiki-ask"}
+    },
+
+
+    {
+      "tag": "temp-home",
+      "patterns": ["what is the temperature","what's going on temperature","what is the temperature now","tell the temperature","please tell the temperature","what is the temperature at home"],
+      "responses": {"irs":"temp-home","ner":false}
+    },
+
+
+
+    {
+      "tag": "news-ask",
+      "patterns": ["tell a little news","what's the news today","what are today's headlines","Tell me today's news little man","What's going on in the news these days","Tell the news man","tell the news"],
+      "responses": {"irs":"news-ask","ner":false}
+    },
+
+
+    {
+      "tag": "nasa-ask",
+      "patterns": ["telling nasa news updates","Tell me the news of NASA","telling space news","tell space update man little","what's going on in space these days"],
+      "responses": {"irs":"nasa-ask","ner":false}
+    },
+
+
+    {
+      "tag": "youtube-play",
+      "patterns": ["play on youtube","play bella songs on youtube","put dead bean on youtube","just watch on youtube about mr 20","play old songs youtube","please play songs on youtube","put about thor on youtube please","dude put iron man on youtube"],
+      "responses": {"irs":"youtube-play","ner":true,"ner-tag":"youtube-play"}
+    },
+
+
+    {
+      "tag": "look-to-buy",
+      "patterns": ["i want to buy the box","Have to buy TV, just watch it on Amazon","see about microwave on amazon","I Want to Have a Chef's Life Watch on Amazon"],
+      "responses": {"irs":"look-to-buy","ner":true,"ner-tag":"look-to-buy"}
+    }
+
+
+  ]
+}
